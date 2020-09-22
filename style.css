@@ -1,0 +1,603 @@
+/*=============Common CSS===========*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, a{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+
+}
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: auto;
+    width: 1140px;
+ 
+}
+section{
+    padding: 80px 0;
+}
+/*=============Top Bar Main CSS===========*/
+.topBarMain{
+    background: #f5f5f5;
+}
+
+.phone {
+    width: 200px;
+    float: left;
+    padding:13px 10px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.phone i{
+    color: #ff5200;
+}
+
+.email {
+    width: 758px;
+    float: left;
+    padding:13px 10px;
+}
+.email i{
+    color: #ff5200;
+}
+
+
+.social {
+    width: 140px;
+    float: left;
+    transition: .3s !important;
+
+}
+.topBarWrapper {
+    overflow: hidden;
+}
+.social a i{
+    display:block;
+    float:left;
+    padding:14px;
+    border-right:1px solid #ddd;
+    color:#2b2b2b !important;
+}
+.social a:first-child{
+   border-left: 1px solid #ddd;
+}
+.social a i:hover{
+    color: #ff5200 !important;
+}
+/*=============Primary Menu CSS===========*/
+
+.primaryWrapper{
+    overflow: hidden;
+    width: 100%;
+}
+.logo{
+    width: 150px;
+    float: left;
+    margin-top: 21px;
+}
+.menu{
+    width: 990px;
+    float: left;
+}
+.mainMenu{
+    list-style: none;
+    float: right;
+}
+.mainMenu li{
+    float: left;
+}
+.mainMenu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+    color: #333333;
+    padding: 30px 30px;
+    font-weight: 500;
+    transition: .5s;
+}
+.mainMenu li a:hover{
+    color: #ff5200;
+}
+/*=============Home Slider CSS===========*/
+
+#homeSlider{
+    background: url(./image/slide-1.jpg);
+    background-repeat: no-repeat;
+    background-position:100% ;
+    padding: 0;
+    
+}
+.sliderContent{
+    color: white;
+    width: 600px;
+}
+.sliderContent h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 120px;
+    float: left;
+}
+.sliderContent p{
+    font-weight: 600;
+    line-height: 25px;
+    width: 490px;
+    margin-bottom: 30px;
+}
+.sliderContent button{
+    background: #ff5200;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-bottom: 120px;
+    outline: none;
+
+}
+.sliderNav{
+    width: 60px;
+    margin: auto;
+    padding:40px 0;
+}
+.sliderNav span{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 4px solid #ddd;
+    display: block;
+    border-radius: 100%;
+    cursor: pointer;
+    float: left;
+    margin: 5px 5px;
+}
+.sliderNav span:first-child{
+    background: #ff5200;
+    border-color: #ff5200;
+}
+/*=============Services section CSS===========*/
+
+#services{
+    background: #f5f6f6;
+}
+
+.singleBox{
+    width: 232px;
+    background: white;
+    padding: 10px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 3px;
+    transition: .5s;
+}
+.singleBox i{color:#fb5200}
+.singleBox:hover{
+    background: #ff5200;
+    color: #fff;
+    cursor: pointer;
+}
+.singleBox:hover h2,i{
+    color: #fff;
+
+}
+.singleBox:hover .sboxIcon i{ color: #ffffff !important;}
+.singleBox:hover .sboxLink i{ color: #ffffff !important;}
+
+.singleBox:hover .sboxLink a{
+    color: #fff;
+}
+.singleBox.active{
+    background: #fb5200;
+    color: #fff;
+}
+
+.singleBox.active h2{
+    background: #fb5200;
+    color: #fff;
+}
+.singleBox.active a {
+    background: #fb5200;
+    color: #fff;
+}
+.singleBox.active i {
+    
+    color: #fff;
+}
+.sboxTitle {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+.sboxTitle h2{
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: -1.1px;
+    color: #333333;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.sboxIcon {
+    text-align: center;
+    color: #fb5200;
+    font-size: 40px;
+    margin: 30px auto;
+}
+.sboxDese {
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.sboxLink{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.sboxLink a {
+    text-decoration: none;
+    color: #ff5200;
+    font-weight: 500;
+   
+}
+/*=============ourTeam section CSS===========*/
+.container {
+    overflow: hidden;
+}
+
+.teamImage {
+    width: 535px;
+    float: left;
+}
+
+.teamImage img {
+    width: 100%;
+}
+
+.teamDetails {
+    width: 535px;
+    float: right;
+}
+
+.titleDesc h2 {
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+
+.titleDesc p {
+    color: #666;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.teamFacilities {
+  overflow: hidden;
+}
+
+.teamFacilities ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 260px;
+    float: left;
+}
+.teamFacilities{
+    margin-bottom: 30px;
+}
+.teamFacilities ul li {
+    line-height: 40px;
+}
+.teamFacilities ul li a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+}
+.teamFacilities ul li a i {
+    color: #666;
+
+    margin-right:12px
+}
+.teamFacilities ul li:hover a{
+    color: #fb5200;
+}
+.teamFacilities ul li:hover i{
+    color: #fb5200;
+}
+.teamContactBin a {
+    display: block;
+}
+
+.teamContactBin a {
+    background: #fb5200;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    border-radius: 2px;
+}
+
+.teamContactBin {
+    width: 146px;
+}
+
+.teamContactBin a:hover{
+    background:#252525;
+    border-color:#252525;
+    color:#fff;
+}
+/*=============ourTeam section CSS===========*/
+#whyChooseUs{
+    background:linear-gradient(rgba(51, 51, 51, .7), rgba(51, 51, 51, .7)), url(./image/why-choose-us1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.singleIcons {
+    width: 250px;
+    text-align: center;
+    color: white;
+    float: left;
+    margin: 0px 17px;
+}
+
+
+.icons {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.singleIcons h2 {
+    font-size: 52px;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.singleIcons h4 {
+    font-size: 22px;
+}
+/*=============Blog post section CSS===========*/
+#blogPosts{
+  background: #f5f6f6;
+}
+
+
+.secTitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.secTitle h2 {
+    font-size: 41px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom:10px
+
+}
+
+.secTitle h2:after {position: absolute;
+    content: '';
+    background: #ff5200;
+    bottom: 0;
+    width: 60px;
+    border-bottom: 3px solid #ff5200;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.secTitle p {
+    margin: auto;
+    width: 550px;
+    font-size: 18px;
+    color: #666;
+}
+.postWrapper {
+    overflow: hidden;
+}
+
+.singlePost {
+    overflow: hidden;
+    width: 250px;
+    float: left;
+    margin: 16px;
+}
+
+.postImg {
+    margin-bottom: 20px;
+}
+
+.postImg img {
+    width: 100%;
+}
+
+.postInfo p {
+    margin-top: 10px;
+    line-height: 23px;
+    color: #666;
+}
+
+
+/*=============Pricing section CSS===========*/
+
+.singleTable {
+    overflow: hidden;
+    width: 280px;
+    border: 1px solid #cecdcd8a;
+    padding: 30px;
+    float: left;
+    border-radius: 3px;
+    margin-right: 35px;
+}
+
+.singleTable h3 {
+    font-size: 30px;
+}
+
+.singleTable h1 {
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.singleTable ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+.singleTable i {
+    color: #ff5200;
+    margin-right: 10px;
+}
+
+.singleTable li {
+    line-height: 2.5;
+}
+.singleTable button {
+    margin-top: 30px;
+    background: #ff5200;
+    border: none;
+    padding: 17px 25px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.singleTable button:hover {
+    background: #252525;
+    border-color: #252525;
+    color: #fff;
+}
+
+/*=============Idea  section CSS===========*/
+.ideaLeftImg{
+
+    background: url(./image/s02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+section#latestIdea {
+    overflow: hidden;
+    height: 400px;
+    padding: 0;
+    position: relative;
+}
+
+.ideaLeftImg {
+    width: 50%;
+    float: left;
+    height: 440px;
+    overflow: hidden;
+}
+
+.rightContent {
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    background: #222222;
+    color: white;
+}
+section#latestIdea {
+    overflow: hidden;
+    height: 500px;
+}
+
+.ideaLeftImg {
+    width: 50%;
+    float: left;
+    height: 486px;
+}
+
+.rightContent {
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    background: #222222;
+    color: white;
+}
+
+.rContentTitle {
+    padding: 70px;
+    padding-bottom: 0;
+    margin-bottom: 40px !important;
+}
+
+
+.rContentTitle h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.rContentIcons {
+    padding: 0 70px;
+    padding: 0px 70px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    /* margin-bottom: 40px; */
+}
+
+
+
+.rIconSingle {
+    width: 254px;
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.rIcon {
+    width: 70px;
+    float: left;
+    overflow: hidden;
+    font-size: 50px;
+}
+.rIcon i{
+    color: #fb5200 !important;
+}
+
+.ricoTitle {
+    width: 163px;
+    float: right;
+}
+.ricoTitle h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ricoTitle h2:hover{
+    color: #fb5200;
+}
+
+
+
+
+
+section#ourTeam {
+    overflow: hidden;
+}
+
+.singlePerson {
+    width: 260px;
+    float: left;
+}
+
+.personImg img {
+    width: 100%;
+}

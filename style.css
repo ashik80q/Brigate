@@ -594,10 +594,122 @@ section#ourTeam {
 }
 
 .singlePerson {
+    text-align: center;
     width: 260px;
     float: left;
+    margin-right: 23px;
+    border-right: 1px solid rgba(102, 102, 102, 0.1);
+    border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+    border-left: 1px solid rgba(102, 102, 102, 0.1);
 }
-
+.personIfo h3 {
+    font-size: 20px;
+    padding: 15px 0 8px 0;
+}
 .personImg img {
     width: 100%;
+    transition: 0.3s;
+    
+}
+.personIfo p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 0 17px 0;
+}
+.teamPersonBtn {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 50px;
+    clear: both;
+}
+.teamPersonBtn button {
+    padding: 18px 20px;
+    background: #4e4949;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: .5s;
+}
+.teamPersonBtn button:hover {
+   background: #fb5200;
+}
+.personImg {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.socialIcons{
+    width: 145px;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.socialIcons a{
+    width: 20px;
+    height: 20px;
+    float: left;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    background: rebeccapurple;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 5px;
+    transition: .5s;
+}
+.socialIcons a:first-child{
+    background: #3d5998;
+    opacity: 0;
+    transition: .90s;
+}
+.socialIcons a:nth-child(2){
+    background: #0e76a8;
+    opacity: 0;
+    transition: .70s;
+}
+.socialIcons a:nth-child(3){
+    background: #00acee;
+    opacity: 0;
+    transition: .50s;
+}
+.socialIcons a:nth-child(4){
+    background: #db4a39;
+    opacity: 0;
+    transition: .30s;
+
+}
+.socialIcons a:hover {
+    background: #fff;
+    color: #333 !important;
+}
+.socialIcons a:hover i{
+     color: #333 !important;
+}
+.singlePerson:hover .socialIcons a:first-child{
+    transform: translateY(20px);
+    opacity: 1;
+}
+.singlePerson:hover .socialIcons a:nth-child(2){
+    transform: translateY(20px);
+    opacity: 1;
+}
+.singlePerson:hover .socialIcons a:nth-child(3){
+    transform: translateY(20px);
+    opacity: 1;
+}
+.singlePerson:hover .socialIcons a:last-child{
+    transform: translateY(20px);
+    opacity: 1;
+}
+.singlePerson:hover .personImg img{
+    transform: scale(1.1);
+}
+.singlePerson:hover{
+    cursor: pointer;
 }

@@ -77,7 +77,7 @@ section{
 /*=============Primary Menu CSS===========*/
 
 .primaryWrapper{
-    overflow: hidden;
+    display: table;
     width: 100%;
 }
 .logo{
@@ -95,6 +95,7 @@ section{
 }
 .mainMenu li{
     float: left;
+   
 }
 .mainMenu li a{
     text-decoration: none;
@@ -1132,4 +1133,87 @@ section#subscribe {
 }
 .subsFollowIcons a:hover i{
     color: black;
+}
+
+ul.subMenu {
+    list-style: none;
+    width: 250px;
+    position: absolute;
+    top: unset;
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 25px;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin:top;
+    transition: 0.3s;
+}
+
+ul.subMenu li{
+    float: none;
+    position: relative;
+   
+}
+ul.subMenu li a{
+    padding: 8px 0;
+    font-weight: 500px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    position: relative;
+    transition: .6s;
+   
+}
+ul.subMenu li a::before{
+    content: "";
+    display: inline-block;
+    background: #ff5200;
+    width: 0px;
+    height: 2px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: .6s;
+}
+ul.subMenu li:hover a::before{
+    width: 20px;
+}
+.mainMenu li:hover ul.subMenu{
+    visibility: visible;
+    transform: scaleY(1);
+}
+ul.subMenu2{
+    list-style: none;
+    width: 250px;
+    position: absolute;
+    top: unset;
+    left: 275px;
+    background: white;
+    border-left: 1px solid #ddd;
+    padding: 25px;
+    visibility: hidden;
+    transform: scaleX(0);
+    display: block;
+    transform-origin:left;
+    transition: 0.3s;
+
+
+}
+ul.subMenu li:hover ul.subMenu2{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+ul.subMenu2 li a::before{
+    content: "" !important;
+    display: inline-block !important;
+    background: #ff5200;
+    width: 0px !important;
+    height: 2px !important;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: .6s;
+}
+ul.subMenu2 li:hover a::before{
+    width: 20px !important;
 }

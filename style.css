@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6, a{
 }
 section{
     padding: 80px 0;
+    
 }
 /*=============Top Bar Main CSS===========*/
 .topBarMain{
@@ -712,4 +713,423 @@ section#ourTeam {
 }
 .singlePerson:hover{
     cursor: pointer;
+}
+
+/*---project section css--*/
+#projects{
+    background: #f5f6f6;
+}
+
+
+.projectWrapper {
+    overflow: hidden;
+    column-count: 3;
+}
+
+.singleProject {
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.singleProject:last-child{
+    margin-right: 0px;
+}
+
+.singleProject img{
+    width: 100%;
+    
+}
+.projectInfo{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 0px 30px;
+    background:linear-gradient(to top, black, transparent 150px);
+    overflow:hidden;
+    padding-bottom: 0;
+    transition: .3s;
+}
+.projectInfo a{
+    color: white;
+    font-weight: 500;
+    display: block;
+    font-size: 16px;
+   
+
+}
+.projectMeta {
+    width: 280px;
+    margin-bottom: 15px;
+    display: block;
+}
+.projectMeta a{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+a.learnMoreBtn{
+    display: block;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    visibility: hidden;
+   transform: translateX(-150px);
+   text-decoration: none;
+
+  
+
+}
+a.learnMoreBtn i{
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+
+.projectMeta h3{ 
+  font-size: 25px;
+  color: white;
+} 
+.singleProject:hover .projectInfo{
+    padding: 40px 30px !important;
+    background:linear-gradient(to top, black, transparent 200px) !important;
+}
+.singleProject:hover a.learnMoreBtn{
+    transform: translateX(0);
+    visibility: visible;
+    transition: .3s;
+    transition-delay: .3s;
+    transition-timing-function: cubic-bezier(0, 0.43, 0.15, 1.09);
+}
+/*---News  section css--*/
+.newsWrapper {
+    overflow: hidden;
+}
+section#latestNews {
+    padding-bottom: 0px !important;
+}
+
+.singleNews {
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+    overflow: hidden;
+}
+padding-bottom
+
+.singleNews:last-child {
+    margin-right: 0px !important;
+}
+
+.newsImage img {width: 100%;}
+
+.newsMeta {
+    padding: 30px;
+    border-left: 1px solid #e4e3e3;
+    border-right: 1px solid #e4e3e3;
+    border-bottom: 1px solid #e4e3e3;
+}
+
+.newsCategory {
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+.newsTitle a {
+    
+    font-weight: 500;
+}
+
+.newsCategory a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    width: 144px;
+    float: left;
+    font-size: 0.86667rem;
+    font-weight: 400;
+}
+
+.newsMeta {
+    overflow: hidden;
+}
+.newsTitle h2{
+    margin-bottom: 14px;
+    font-weight: 300;
+}
+.newsTitle a {
+  
+    text-decoration: none;
+    color: #333 !important;
+}
+
+a.newsReadMorebtn{
+    font-weight: 400;
+    color: #fb5200 !important;
+    margin-top: 18px;
+}
+a.newsReadMorebtn i{
+    font-weight: 400;
+    color: #fb5200 !important;
+}
+
+.newsTitle a:hover{
+    color: #fb5200 !important;
+}
+
+/***footer css **/
+
+footer{
+    background: #1a1a1a;
+    padding-top: 200px;
+
+}
+.copyrightContainer{
+    overflow: hidden;
+    color: #999999;
+    border-top: 1px solid #333;
+}
+
+.copyrightContainer .container{
+    overflow: hidden;
+}
+.copyrightText{
+    float: left;
+    width: 540px;
+    padding: 25px 0px;
+}
+.copyrightMenu{
+    float: left;
+    width: 570px;
+}
+.copyrightMenu ul{
+    list-style: none;
+    float: right;
+    overflow: hidden;
+
+}
+.copyrightMenu ul li{
+    float: right;
+}
+.copyrightMenu ul li a{
+    color: #999;
+    display: block;
+    padding:25px 15px;
+    text-decoration: none;
+}
+.fboxWraper{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.fbox{
+    overflow: hidden;
+    width: 250px;
+    float: left;
+    margin-right: 30px;
+    color: #999999;
+}
+.fbox:last-child{
+    margin-right: 0px;
+
+}
+.fbox h3{
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.fbox p{
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+.ficons a {
+    display: block;
+    width: 20px;
+    background: #666666;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+span#contacts{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+span#contacts i{
+    color: #fb5200;
+    margin-right: 10px;
+   
+}
+ul#ufLink{
+    list-style:none;
+}
+ul#ufLink li{
+    line-height: 25px;
+}
+ul#ufLink li a{
+    color: #999999;
+    text-decoration: none;
+    display: block;
+    padding: 7px 0;
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px dashed #353535;
+}
+ul#ufLink li:first-child a{
+    padding: 0px 0px;
+}
+ul#ufLink li:last-child a{
+    border-bottom: 0;
+}
+ul#ufLink li a i{
+    color: #999999;
+    font-size: 14px;
+    margin-right: 7px;
+}
+.fRpost{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.fRpostMeta {
+    width: 48px;
+    background: #313131;
+    padding: 10px 7px;
+    border-radius: 5px;
+    color: white;
+    line-height: 12px;
+    float: left;
+    text-align: center;
+}
+.fRpostMeta :first-child{
+   font-size: 24px;
+   font-weight: 700;
+   
+}
+.fRpostMeta :last-child{
+    font-size: 9px;
+    font-weight: 700;
+    margin-top: 8px;
+    display: block;
+ }
+
+.fRpostTitle {
+    width: 164px;
+    float: right;
+   
+}
+.fRpostTitle h3{
+    margin:0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #999;
+}
+.fRpostTitle a {
+    color: #666;
+    text-decoration: none;
+    font-size: 11px;
+    margin-right: 10px;
+}
+.fRpostTitle a i{
+    color: #999;
+}
+.ficons a:hover {
+    background: #ff5200;
+}
+
+/* submit section css*/
+section#subscribe {
+    position: relative;
+    bottom: -165px;
+    padding-top:0 ;
+}
+
+.submit-wrapper {
+    overflow: hidden;
+    background: #ff5200;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+.subsBoxesWraper {
+    width: 320px;
+    float: left;
+    overflow: hidden;
+    padding: 35px;
+    padding-bottom: 36px;
+}
+.subsBoxesWraper:last-child{
+    padding-right: 0;
+}
+.subsBoxesWraper h2{
+    color: white;
+    margin-bottom: 20px;
+}
+.inputboxes {
+  
+    position: relative;
+}
+.inputboxes input:first-child {
+    width: 75%;
+    padding: 14px;
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    letter-spacing: 1px;
+    font-family: oswald;
+    font-size: 13px;
+    word-spacing: 3px;
+    outline: none;
+}
+#submitbtn{
+    padding: 16px;
+    border: none;
+    outline: none;
+    background: #1a1a1a;
+    color: white;
+    font-weight: 700;
+    letter-spacing:1px;
+    font-size: 14px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right:18px;
+}
+.subsBoxesWraper p {
+    color: #fff;
+}
+
+.subsFollowIcons {
+    overflow: hidden;
+}
+.subsFollowIcons a {
+    width: 30px;
+    height: 30px;
+    float: left;
+    display: block;
+    border: 1px solid #fff;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.subsFollowIcons a:hover{
+    background: #fff;
+    color: black;
+    
+}
+.subsFollowIcons a:hover i{
+    color: black;
 }
